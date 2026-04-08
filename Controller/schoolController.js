@@ -42,7 +42,7 @@ export const addSchool = async(req, res) => {
 
     try {
 
-        const id = await schoolService.addSchool(name, address, latitude, longitude);
+        const id = await schoolService.addSchool(name, address, lat, lng);
 
         return res.status(201).json({
         message: "School added successfully",
