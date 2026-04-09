@@ -9,6 +9,7 @@ app.use(express.json());
 app.use("/api", schoolRoute);
 
 
-app.listen(PORT, "0.0.0.0", () => {
+
+app.listen(process.env.PORT, "0.0.0.0", () => {
   console.log(`Server is running on port ${PORT}`);
 });
